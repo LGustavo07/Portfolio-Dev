@@ -1,0 +1,137 @@
+#my-work {
+  display: flex;
+  justify-content: center;
+
+  padding: 72px 120px 144px 120px;
+  flex-direction: column;
+
+  text-align: center;
+
+  h3 {
+    margin-top: 8px;
+  }
+}
+
+#works {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 24px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: 280px;
+  padding: 12px;
+
+  border-radius: 12px;
+  background: var(--color-gray-300, #292c34);
+
+  img {
+    width: 306px;
+    height: 156px;
+    border-radius: 8px;
+    gap: 20px;
+  }
+  h4 {
+    color: var(--color-gray-600);
+    font: var(--text-title-sm);
+    margin-top: 20px;
+  }
+  p {
+    font: var(--text-sm);
+    color: var(--color-gray-500);
+    margin-top: 8px;
+  }
+}
+
+.card:hover {
+  border-radius: 12px;
+  border: 1.5px solid var(--color-gray-400, #878ea1);
+  background: var(--color-gray-300, #292c34);
+}
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 88px 120px 120px 120px;
+  text-align: center;
+  background: var(--color-gray-100, #0d0e11);
+}
+
+#card-services {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  img {
+    margin-top: 56px;
+    margin-bottom: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  h4 {
+    margin-bottom: 4px;
+  }
+}
+
+.serv {
+  display: flex;
+
+  justify-content: center;
+  padding: 20px;
+  gap: 24px;
+  text-align: left;
+}
+
+section#contacts {
+  background: url(/assets/images/background/contacts.png) lightgray 50% / cover no-repeat;
+  padding: 128px 120px 200px 120px;
+  text-align: center;
+
+  span {
+    color: var(--color-purple);
+  }
+  p {
+    margin-top: 8px;
+  }
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 20px;
+  width: 400px;
+  color: var(--color-gray-500);
+  background: var(--color-gray-300);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font: var(--text-md);
+  transition: background-color 0.3s;
+}
+.buttons img.arrow {
+  margin-left: auto;
+}
+
+button:hover img:first-child {
+  filter: invert(58%) sepia(95%) saturate(469%) hue-rotate(161deg) brightness(96%)
+    contrast(101%);
+}
+
+button:hover {
+  border: 1.5px solid var(--Main-Blue, #3996db);
+}

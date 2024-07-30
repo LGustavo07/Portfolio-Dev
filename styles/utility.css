@@ -1,0 +1,20 @@
+.red-text {
+  color: var(--color-red);
+  font: var(--text-subtitle);
+}
+
+.subtitle {
+  color: var(--color-gray-600);
+  font: var(--text-title-md);
+  margin-top: 8px;
+}
+
+.subtitle-h4 {
+  color: var(--color-gray-600);
+  font: var(--text-title-sm);
+}
+
+.text-p {
+  font: var(--text-sm);
+  color: var(--color-gray-400);
+}

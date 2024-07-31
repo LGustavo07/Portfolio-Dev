@@ -1,137 +1,104 @@
 #my-work {
-  display: flex;
-  justify-content: center;
-
-  padding: 72px 120px 144px 120px;
-  flex-direction: column;
-
-  text-align: center;
-
-  h3 {
-    margin-top: 8px;
+  padding: 72px 24px 144px 24px;
+  #works {
+    padding-top: 56px;
+    margin-inline: auto;
+    max-width: 1040px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    .card {
+      text-align: left;
+      background-color: var(--color-gray-300);
+      padding: 12px 12px 17px 12px;
+      border-radius: 12px;
+      max-width: 330px;
+      border: 1.5px solid var(--color-gray-300);
+      &:hover {
+        border: 1.5px solid var(--color-gray-400);
+        cursor: pointer;
+      }
+      img {
+        max-width: 304.5px;
+        border-radius: 8px;
+      }
+      h4 {
+        padding-block: 24px 8px;
+      }
+      p {
+        color: var(--color-gray-500);
+      }
+    }
   }
 }
 
-#works {
-  margin-top: 56px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  gap: 24px;
+#my-services {
+  background-color: var(--color-gray-100);
+  padding: 88px 24px 120px 24px;
+  #services {
+    margin-inline: auto;
+    padding-top: 56px;
+    max-width: 888px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    .card {
+      text-align: left;
+      width: 280px;
+      border: 2px solid var(--color-gray-200);
+      border-radius: 12px;
+      padding: 20px;
+      p {
+        color: var(--color-gray-500);
+        padding-top: 8px;
+      }
+      img {
+        padding-bottom: 20px;
+        max-width: 48px;
+      }
+    }
+  }
 }
 
-.card {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+#contact {
+  padding-top: 128px;
+  background-image: url(../assets/images/background/contacts.png);
+  height: 787px;
+  background-repeat: no-repeat;
+  background-size: contain;
 
-  height: 280px;
-  padding: 12px;
-
-  border-radius: 12px;
-  background: var(--color-gray-300, #292c34);
-
-  img {
-    width: 306px;
-    height: 156px;
-    border-radius: 8px;
-    gap: 20px;
-  }
-  h4 {
-    color: var(--color-gray-600);
-    font: var(--text-title-sm);
-    margin-top: 20px;
+  #buttons {
+    max-width: 400px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
   p {
-    font: var(--text-sm);
     color: var(--color-gray-500);
-    margin-top: 8px;
+    padding-block: 8px 48px;
   }
-}
-
-.card:hover {
-  border-radius: 12px;
-  border: 1.5px solid var(--color-gray-400, #878ea1);
-  background: var(--color-gray-300, #292c34);
-}
-
-#services {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 88px 120px 120px 120px;
-  text-align: center;
-  background: var(--color-gray-100, #0d0e11);
-}
-
-#card-services {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-
-  img {
-    margin-top: 56px;
-    margin-bottom: 20px;
-    width: 48px;
-    height: 48px;
+  .button {
+    padding: 20px;
+    background-color: var(--color-gray-300);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid var(--color-gray-300);
+    span {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    &:hover {
+      border: 1.5px solid var(--color-blue);
+      img {
+        filter: invert(58%) sepia(94%) saturate(2457%) hue-rotate(180deg)
+          brightness(92%) contrast(86%);
+      }
+    }
   }
-
-  h4 {
-    margin-bottom: 4px;
-  }
-}
-
-.serv {
-  display: flex;
-
-  justify-content: center;
-  padding: 20px;
-  gap: 24px;
-  text-align: left;
-}
-
-section#contacts {
-  background: url(/assets/images/background/contacts.png) lightgray 50% / cover no-repeat;
-  padding: 128px 120px 200px 120px;
-  text-align: center;
-
-  span {
-    color: var(--color-purple);
-  }
-  p {
-    margin-top: 8px;
-  }
-}
-
-#container {
-  display: flex;
-  justify-content: center;
-  margin-top: 48px;
-}
-button {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 20px;
-  width: 400px;
-  color: var(--color-gray-500);
-  background: var(--color-gray-300);
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  font: var(--text-md);
-  transition: background-color 0.3s;
-}
-.buttons img.arrow {
-  margin-left: auto;
-}
-
-button:hover img:first-child {
-  filter: invert(58%) sepia(95%) saturate(469%) hue-rotate(161deg) brightness(96%)
-    contrast(101%);
-}
-
-button:hover {
-  border: 1.5px solid var(--Main-Blue, #3996db);
 }
